@@ -31,7 +31,7 @@ const PageList = ({user}) => {
   else {
     return (
       <div>
-        <h2> Liste de tes morts </h2>
+        <h2> Liste des publications </h2>
         {onePost.map((data, id) => {
           return (
             !user ? <Card key={id} data={data} onRefresh={handleRefreshLike} /> : data.user.id === user.id && <Card key={id} data={data} onRefresh={handleRefreshLike} />

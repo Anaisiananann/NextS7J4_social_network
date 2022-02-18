@@ -28,7 +28,7 @@ export default function Post() {
   else {
     return (
       <div className='Project'>
-        <h1>Liste des projets samere</h1>
+        <h1>Liste des publications</h1>
         {onePost.map((data, id) => {
           return (
             <div key={id}>

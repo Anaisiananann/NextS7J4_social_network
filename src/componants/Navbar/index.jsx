@@ -36,7 +36,7 @@ export default function Navbar() {
           <Toolbar> 
 
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              <Link to="/">Home</Link>
+              <Link to="/">Accueil</Link>
             </Typography>
             {!auth.connected && (
               <div>
@@ -88,7 +88,7 @@ export default function Navbar() {
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
                 >
-                  <MenuItem onClick={handleClose}><Link to="/profile">My account</Link></MenuItem>
+                  <MenuItem onClick={handleClose}><Link to="/profile">Mon compte</Link></MenuItem>
                   <MenuItem onClick={handleClose}><LogOut>LogOut</LogOut></MenuItem>
                 </Menu>
               </div>

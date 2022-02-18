@@ -38,26 +38,26 @@ export default function Home() {
   return (
     <div className='Contener'>
       <div className="Title">
-        <h1 >Twish l'appli des amis de wish</h1>
+        <h1 > Mini Réseau Social</h1>
       </div>
       {auth.connected.connected && (
         
         <div className="Form">
           <form action="post">
             <div>
-              <label htmlFor="input-text">Ici tu peux y écrire n'importe quoi</label>
+              <label htmlFor="input-text">Ecris ton truc qui va changer le monde, ci-dessous:</label>
             </div>
             <TextareaAutosize
               type="text"
               value={text}
               aria-label="empty textarea"
-              placeholder="Empty"
+              placeholder="Tu dis quoi?"
               style={{ width: 200 }}
               onChange={(e) => settext(e.target.value)}
             />
             {/* <input type="text" value={text} onChange={(e) => settext(e.target.value)} id='input-text' /> */}
             <div>
-              <button type="button" onClick={() => changetext()}>Envoyer</button>
+              <button type="button" onClick={() => changetext()}>Publier</button>
             </div>
           </form>
         </div>           

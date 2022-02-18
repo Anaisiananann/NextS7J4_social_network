@@ -45,7 +45,7 @@ const User = () => {
   else {
     return (
       <div>
-        <p>Suce mon cul</p>
+        <p>ça ne marche pas! c'est normal c'est de l'informatique!</p>
       </div>
     )
   }

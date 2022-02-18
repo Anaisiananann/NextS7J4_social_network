@@ -53,7 +53,7 @@ export default function Login() {
         <label htmlFor="input-email-register">Email</label>
         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} id='input-email-login' />
 
-        <label htmlFor="input-password-register">Password</label>
+        <label htmlFor="input-password-register">Mot De Passe</label>
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} id='input-password-login'/>
 
         <button type="button" onClick={() => logInFetchRequest()}>LogIn</button>

@@ -32,7 +32,7 @@ export default function Profile() {
   else if (auth.connected.connected && userPage) {
     return (
     <div>
-      <h1>Bienvenue sur ton profil sombre mécréant</h1>
+      <h1>Bienvenue sur ton profil</h1>
       <p>Username : <span>{userPage.username}</span> </p>
       <p>Email : <span>{userPage.email}</span> </p>
       <p>Description : <span>{userPage.description}</span></p>
@@ -44,7 +44,7 @@ export default function Profile() {
   else {
     return (
       <div>
-        <p>Suce mon cul</p>
+        <p>Il n'y a pas de profil enregistré</p>
       </div>
     )
   }
